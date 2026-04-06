@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffd8d8; /* subtle background color */
+}
+
+/* Title */
+.title h1 {
+    padding: 0.8rem;
+    text-align: center;
+    background-color: #ef4444;
+    font-size: 3rem;
+    color: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+}
+
+/* Input Section */
+.details, .people {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 1rem 2rem;
+    justify-content: center;
+}
+
+.details input, .details select, .people input {
+    flex: 1;
+    min-width: 120px;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    font-size: 1rem;
+}
+
+/* Button */
+#addBtn {
+    display: block;
+    width: calc(100% - 4rem);
+    margin: 1rem auto;
+    padding: 12px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#addBtn:hover {
+    background-color: #2563eb;
+}
+
+/* Total Display */
+#totalAmount {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #111827;
+    margin-bottom: 1rem;
+}
+
+/* Expense List */
+#expenseList {
+    list-style: none;
+    padding: 0 2rem;
+}
+
+#expenseList li {
+    background-color: #fff;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    font-size: 1rem;
+}
+
+/* Delete Button */
+#expenseList li button {
+    background-color: #ef4444;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#expenseList li button:hover {
+    background-color: #b91c1c;
+}
+
+/* Responsive Layout */
+@media (max-width: 500px) {
+    .details input, .details select, .people input {
+        flex: 100%;
+    }
+}

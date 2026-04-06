@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title">
+        <h1>Expense Tracker</h1>
+    </div>
+    <div class="details">
+        <input type="text" id="expenseName" placeholder="Expense Name">
+        <input type="text" id="place" placeholder="Place">
+        <input type="number" id="amount" placeholder="Amount">
+        <select id="contribution">
+            <option value="full">Full</option>
+            <option value="split">Split</option>
+        </select>
+    </div>
+    <div class="people">
+        <input type="number" id="numOfPeople" placeholder="Number of People">
+    </div>
+    <button id="addBtn">Calculate</button>
+    <h2 id="totalAmount">Total: Rs.0</h2>
+    <ul id="expenseList"></ul>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
